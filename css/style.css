@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+    background:#ffc600;
+}
+
+.inbox {
+    max-width: 40rem;
+    margin: 5rem auto;
+    background:white;
+    border-radius: 0.5rem;
+    box-shadow: 1rem 1rem 0 rgba(0,0,0,0.1);
+}
+
+.item {
+    display:flex;
+    align-items:center;
+    border-bottom: 1px solid #F1F1F1;
+}
+
+.item:last-child {
+    border-bottom:0;
+}
+
+input:checked + p {
+    background:#F9F9F9;
+    text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+    margin: 2rem;
+}
+
+p {
+    margin: 0;
+    padding: 2rem;
+    transition: background 0.2s;
+    flex:1;
+    font-family:'helvetica neue';
+    font-size: 2rem;
+    font-weight: 200;
+    border-left: 1px solid #D1E2FF;
+}
